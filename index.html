@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalog</title>
+    <link rel="stylesheet" href="fonts/fonts.css" type="text/html" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-svg.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-container">
+          <div class="header-container-one">
+            <a href="#"><img src="img/svg/logo.svg" alt="Лого" /></a>
+            <button class="header-search-btn" aria-label="поиск">
+              <svg height="27" width="26">
+                <use xlink:href="img/svg/search.svg#search"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="header-container-two">
+            <div class="header-nav">
+              <button class="header-menu-btn" aria-label="открыть меню">
+                <svg width="32" height="23">
+                  <use xlink:href="img/svg/burger.svg#burger"></use>
+                </svg>
+              </button>
+            </div>
+            <button class="header-user-btn" aria-label="юзер">
+              <svg width="29" height="29">
+                <use xlink:href="img/svg/user.svg#user"></use>
+              </svg>
+            </button>
+            <button class="header-basket-btn" aria-label="открыть корзину">
+              <svg width="32" height="29">
+                <use xlink:href="img/svg/basket.svg#basket"></use>
+              </svg>
+            </button>
+            <span class="header-external-meter">0</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="catalog-container"></div>
+      </div>
+    </main>
+    <footer></footer>
+
+    <script src="js/catalog.js"></script>
+  </body>
+</html>
