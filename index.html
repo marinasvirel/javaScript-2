@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalog</title>
+    <link rel="stylesheet" href="fonts/fonts.css" type="text/html" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-svg.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-container">
+          <div class="header-container-one">
+            <a href="#"><img src="img/svg/logo.svg" alt="Лого" /></a>
+            <button class="header-search-btn" aria-label="поиск">
+              <svg height="27" width="26">
+                <use xlink:href="img/svg/search.svg#search"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="header-container-two">
+            <div class="header-nav">
+              <button class="header-menu-btn" aria-label="открыть меню">
+                <svg width="32" height="23">
+                  <use xlink:href="img/svg/burger.svg#burger"></use>
+                </svg>
+              </button>
+            </div>
+            <button class="header-user-btn" aria-label="юзер">
+              <svg width="29" height="29">
+                <use xlink:href="img/svg/user.svg#user"></use>
+              </svg>
+            </button>
+            <button class="header-basket-btn" aria-label="открыть корзину">
+              <svg width="32" height="29">
+                <use xlink:href="img/svg/basket.svg#basket"></use>
+              </svg>
+            </button>
+            <span class="header-external-meter">0</span>
+            <!-- Корзина -->
+            <div class="header-basket-box">
+              <h3 class="basket-box-title">Ваш заказ</h3>
+              <h3 class="basket-total">Total price:
+                <span class="basket-total-price">0</span>
+              </h3>
+              <ul class="basket-box-list">
+                <li class="basket-box-item" data-id="01">
+                  <img class="basket-box-img" src="img/catalog-1.jpg" alt="" />
+                  <div class="basket-box-content">
+                    <div class="basket-box-list-title catalog-item-title">
+                      Lorem, ipsum dolor.
+                    </div>
+                    <div class="basket-box-text catalog-item-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Placeat cum expedita cumque tempore repellendus, sit illum
+                      voluptates tenetur fuga at!
+                    </div>
+                    <div class="basket-box-price catalog-item-price">Цена: $ 
+                      <span class="basket-box-price-num">34.00</span>
+                    </div>
+                    <div class="basket-box-counter">
+                      <span class="basket-box-plus" data-action="plus">+</span>
+                      <span class="basket-box-num" data-counter>1</span>
+                      <span class="basket-box-minus" data-action="minus">-</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="catalog-container"></div>
+      </div>
+    </main>
+    <footer></footer>
+
+    <script src="js/catalog.js"></script>
+  </body>
+</html>
